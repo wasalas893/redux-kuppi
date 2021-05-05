@@ -1,47 +1,40 @@
 {
-  "name": "practies-redux",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.10",
-    "@testing-library/react": "^11.2.6",
-    "@testing-library/user-event": "^12.8.3",
-    "antd": "^4.15.1",
-    "axios": "^0.21.1",
-    "bootstrap": "^4.6.0",
-    "prop-types": "^15.7.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-redux": "^7.2.3",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
-    "redux": "^4.0.5",
-    "redux-thunk": "^2.3.0",
-    "uuid": "^8.3.2",
-    "web-vitals": "^1.1.1"
-  },
+  "name": "react-snetwork",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wasalas893/react-SNetwork.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wasalas893/react-SNetwork/issues"
+  },
+  "homepage": "https://github.com/wasalas893/react-SNetwork#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.1",
+    "express": "^4.17.1",
+    "express-validator": "^6.4.0",
+    "gravatar": "^1.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.5.6",
+    "mongoose": "^5.9.9",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.3"
+  },
+  "engines": {
+    "node": "12.16.3"
   }
 }
